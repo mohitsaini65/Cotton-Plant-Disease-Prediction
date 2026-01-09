@@ -1,36 +1,42 @@
-# Cotton Plant Disease Prediction 🌱
+## Project Overview
+This project focuses on classifying cotton plant diseases using deep learning.
+Both a custom CNN and transfer learning models were explored.
 
-## Overview
-This project focuses on detecting cotton plant diseases using deep learning techniques.
-An image-based classification system was developed to identify healthy and diseased cotton plants.
+## Models Implemented
+- Custom CNN
+- InceptionV3 (Transfer Learning)
+- ResNet152V2 (Transfer Learning)
 
 ## Dataset
-- Cotton leaf and plant images
-- Multiple disease classes along with healthy class
-- Dataset used strictly for academic purposes
+- ~2,000 images
+- 4 classes: Healthy, Diseased (leaf & plant stages)
+- Dataset not uploaded due to size
 
 ## Methodology
-- Image preprocessing and augmentation
-- Custom Convolutional Neural Network (CNN)
-- Transfer Learning using InceptionV3
-- Performance comparison across CNN architectures
+- Image preprocessing & augmentation
+- CNN baseline model
+- Transfer learning using pretrained ImageNet models
+- Model comparison based on accuracy and efficiency
 
 ## Results
-- Achieved high classification accuracy
-- InceptionV3 provided the best balance between accuracy and computational efficiency
+- InceptionV3 achieved the best performance
+- Provided high accuracy with lower computational cost
 
 ## Tech Stack
 - Python
 - TensorFlow / Keras
 - OpenCV
-- NumPy, Pandas
+- NumPy, Matplotlib
 - Google Colab
 
 ## How to Run
-1. Open the notebook in Google Colab
-2. Upload the dataset to Google Drive
-3. Run all cells sequentially
+1. Clone the repository
+2. Install dependencies  
+   `pip install -r requirements.txt`
+3. Place dataset in `data/` folder
+4. Run notebook from `notebooks/`
 
 ## Future Improvements
-- Mobile application deployment
-- Real-time disease detection system
+- Add real-time prediction interface
+- Try lightweight models for deployment
+
